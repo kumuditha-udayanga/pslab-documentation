@@ -6,14 +6,14 @@ git config --global user.email "noreply+travis@fossasia.org"
 cd docs/sources
 
 make html
-mkdir _build/html/docs
 
-git clone --quiet --branch=gh-pages https://$USERNAME:$GITHUB_API_KEY@github.com/$USERNAME/pslab-documentation gh-pages > /dev/null
+git clone --quiet --branch=gh-pages https://$USER_NAME:$GITHUB_API_KEY@github.com/$USER_NAME/pslab-documentation gh-pages > /dev/null
 
 cd gh-pages
 
 rm -rf *
 cp -r ../_build/html/* .
+touch .nojekyll
 
 git checkout --orphan temporary
 
