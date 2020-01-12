@@ -17,7 +17,7 @@ import sphinx_material
 
 # -- Project information -----------------------------------------------------
 
-project = 'PSLab Documentation'
+project = 'PSLab'
 copyright = '2019, FOSSASIA'
 author = 'FOSSASIA'
 
